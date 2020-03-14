@@ -1,11 +1,10 @@
 body {
-  background-color: black;
-  color: #333;
+  background-color: grey;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -22,6 +21,17 @@ a {
 .container {
   display: flex;
   align-items: flex-start;
+  .front-page-image{
+    background: image-url("birds.jpg")no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
 
   .screen-by-two {
     width: 50vw;
@@ -49,4 +59,37 @@ a {
     border-radius: 5px;
     padding: 2px;
   }
+}
+
+
+.link-image {
+  position: absolute;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+}
+
+.linkedin {
+  max-width: 60px;
+  bottom: 89px;
+  right: 150px;
+}
+
+.github {
+  max-width: 83px;
+  bottom: 41px;
+  left: 150px;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+}
+
+.my-bio {
+  text-align: justify;
+  font-size: 30px;
+  line-height: 60px;
 }
