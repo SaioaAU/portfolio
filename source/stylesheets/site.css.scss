@@ -56,11 +56,41 @@ a {
     text-decoration: none;
     color: white;
   }
-  :hover {
+
+  &:hover {
     background-color: white;
-    color: black;
     border-radius: 5px;
     padding: 2px;
+    a {
+      color: black;
+    }
+  }
+}
+
+.projects-button {
+  position: fixed;
+  top: 15rem;
+  left: 18rem;
+  background-color: white;
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+
+    a {
+      font-size: 40px;
+      text-decoration: none;
+      color: black;
+      background: none;
+    }
+
+  &:hover {
+    background-color: black;
+    border-radius: 5px;
+    a {
+      color: white;
+    }
   }
 }
 
