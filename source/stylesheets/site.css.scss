@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: #484848;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -43,6 +43,7 @@ a {
   .screen-by-two {
     width: 50vw;
     height: 100vh;
+    background-image: linear-gradient(#bfbfbf, black);
   }
 }
 
@@ -52,6 +53,9 @@ a {
   right: 2rem;
   background-color: black;
   border: none;
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
     a {
     text-decoration: none;
     color: white;
@@ -63,33 +67,33 @@ a {
     padding: 2px;
     a {
       color: black;
+      padding-left: 2px;
+      padding-right: 2px;
     }
   }
 }
 
 .projects-button {
-  position: fixed;
-  top: 15rem;
-  left: 18rem;
-  background-color: white;
-  border: none;
-  padding: 0;
-  border-radius: 5px;
-  padding-left: 2px;
-  padding-right: 2px;
-
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  bottom: 6vh;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
     a {
-      font-size: 40px;
+      font-size: 25px;
       text-decoration: none;
       color: black;
       background: none;
     }
 
   &:hover {
-    background-color: black;
-    border-radius: 5px;
+    border-color: #7b7979;
     a {
-      color: white;
+      color: #7b7979;
     }
   }
 }
@@ -108,14 +112,14 @@ a {
 
 .linkedin {
   max-width: 60px;
-  top: 71vh;
-  left: 35vw;
+  top: 88vh;
+  left: 39vw;
 }
 
 .github {
-  max-width: 83px;
-  top: 73vh;
-  left: 8vw;
+  max-width: 84px;
+  top: 86vh;
+  left: 6vw;
 }
 
 .center-content {
@@ -127,7 +131,18 @@ a {
 }
 
 .my-bio {
-  text-align: justify;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 60px;
+}
+
+.left {
+  height: 100vh;
+  width: 50vw;
+  background-image: linear-gradient(black, #bfbfbf);
+}
+
+.right {
+  height: 100vh;
+  width: 50vw;
+  background-image: linear-gradient(#bfbfbf, black);
 }
