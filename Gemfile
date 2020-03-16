@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'bootstrap-sass', require: false
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-livereload'
