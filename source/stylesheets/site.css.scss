@@ -21,25 +21,28 @@ a {
 .container {
   display: flex;
   align-items: flex-start;
-  .front-page-image{
-    background: image-url("birds.jpg")no-repeat;
-    background-size: cover;
-    position: relative;
+  position: relative;
+  .screen-by-two {
+    height: 100vh;
+    width: 50vw;
+  .background-image{
+    height: 100%;
+    width: 100%;
+  }
   }
 
   h1 {
-    font-size: 60px;
-    margin-left: 2rem;
-    margin-top: 0.5rem;
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    margin: 0;
+    font-size: 50px;
   }
+
 
   .screen-by-two {
     width: 50vw;
     height: 100vh;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 
@@ -53,11 +56,41 @@ a {
     text-decoration: none;
     color: white;
   }
-  :hover {
+
+  &:hover {
     background-color: white;
-    color: black;
     border-radius: 5px;
     padding: 2px;
+    a {
+      color: black;
+    }
+  }
+}
+
+.projects-button {
+  position: fixed;
+  top: 15rem;
+  left: 18rem;
+  background-color: white;
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+
+    a {
+      font-size: 40px;
+      text-decoration: none;
+      color: black;
+      background: none;
+    }
+
+  &:hover {
+    background-color: black;
+    border-radius: 5px;
+    a {
+      color: white;
+    }
   }
 }
 
@@ -67,17 +100,21 @@ a {
   display: inline-block;
   background-color: transparent;
   border: none;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .linkedin {
   max-width: 60px;
-  top: 77vh;
-  left: 30vw;
+  top: 71vh;
+  left: 35vw;
 }
 
 .github {
   max-width: 83px;
-  top: 79vh;
+  top: 73vh;
   left: 8vw;
 }
 
@@ -86,6 +123,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0px 50px;
+  box-sizing: border-box;
 }
 
 .my-bio {
