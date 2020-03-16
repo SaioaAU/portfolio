@@ -1,6 +1,6 @@
 body {
   background-color: #484848;
-  color: white;
+  color: #ececec;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
@@ -37,13 +37,14 @@ a {
     left: 45px;
     margin: 0;
     font-size: 50px;
+    color: #ececec;
   }
 
 
   .screen-by-two {
     width: 50vw;
     height: 100vh;
-    background-image: linear-gradient(#bfbfbf, black);
+    background-color: white;
   }
 }
 
@@ -133,16 +134,31 @@ a {
 .my-bio {
   font-size: 20px;
   line-height: 60px;
+  color: #4a4a4a;
 }
 
 .left {
   height: 100vh;
   width: 50vw;
   background-image: linear-gradient(black, #bfbfbf);
+  img {
+    max-width: 150px;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    bottom: 3vh;
+  }
 }
 
 .right {
   height: 100vh;
   width: 50vw;
-  background-image: linear-gradient(#bfbfbf, black);
+  background-image: linear-gradient(black, #bfbfbf);
+  img {
+    max-width: 150px;
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    bottom: 3vh;
+  }
 }
