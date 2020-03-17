@@ -31,20 +31,18 @@ a {
   }
   }
 
-  h1 {
-    position: absolute;
-    top: 5px;
-    left: 45px;
-    margin: 0;
-    font-size: 50px;
-    color: #ececec;
-  }
-
+.hi {
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
+  font-size: 30px;
+  color: #eaeaea;
+}
 
   .screen-by-two {
     width: 50vw;
     height: 100vh;
-    background-color: white;
+    background-color: #eaeaea;
   }
 }
 
@@ -61,7 +59,6 @@ a {
     text-decoration: none;
     color: white;
   }
-
   &:hover {
     background-color: white;
     border-radius: 5px;
@@ -75,10 +72,10 @@ a {
 }
 
 .projects-button {
-  position: absolute;
-  left: 25%;
-  transform: translateX(-50%);
-  bottom: 6vh;
+  // position: absolute;
+  // left: 75%;
+  // transform: translateX(-50%);
+  // bottom: 82vh;
   background-color: transparent;
   border: 1px solid black;
   border-radius: 8px;
@@ -99,10 +96,15 @@ a {
   }
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .link-image {
-  position: absolute;
-  display: inline-block;
+  // position: absolute;
+  // display: inline-block;
   background-color: transparent;
   border: none;
   img {
@@ -113,20 +115,20 @@ a {
 
 .linkedin {
   max-width: 60px;
-  top: 88vh;
-  left: 39vw;
+  // top: 12vh;
+  // left: 59vw;
 }
 
 .github {
   max-width: 84px;
-  top: 86vh;
-  left: 6vw;
+  // top: 10vh;
+  // left: 87vw;
 }
 
 .center-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 0px 50px;
   box-sizing: border-box;
 }
@@ -135,6 +137,9 @@ a {
   font-size: 20px;
   line-height: 60px;
   color: #4a4a4a;
+  line-height: 50px;
+  bottom: 90vh;
+  margin: 2rem;
 }
 
 .left {
