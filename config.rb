@@ -51,7 +51,6 @@ page '/*.txt', layout: false
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.remote = 'git@github.com:SaioaAU/saioaau.github.io.git'
-  # deploy.remote = 'git@github.com:SaioaAU/SaioaAU.github.io.git'
   deploy.branch = 'master'
   deploy.build_before = true
 end
