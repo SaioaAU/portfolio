@@ -76,10 +76,6 @@ a {
 }
 
 .projects-button {
-  // position: absolute;
-  // left: 75%;
-  // transform: translateX(-50%);
-  // bottom: 82vh;
   background-color: transparent;
   border: 1px solid black;
   border-radius: 8px;
@@ -107,8 +103,6 @@ a {
 }
 
 .link-image {
-  // position: absolute;
-  // display: inline-block;
   background-color: transparent;
   border: none;
   img {
@@ -144,6 +138,14 @@ a {
   line-height: 50px;
   bottom: 90vh;
   margin: 2rem;
+  margin-top: 0px;
+}
+
+.junior {
+  margin-bottom: 0px;
+  color: black;
+  font-size: 25px;
+  text-align: center;
 }
 
 //----------------------------- my projects page: ---------------------------------------------
@@ -197,4 +199,21 @@ h1 {
 h3 {
   margin: 30px;
   max-width: 450px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .container {
+    flex-direction: column;
+    .screen-by-two {
+      width: 100vw;
+      .my-bio {
+        line-height: 1.1;
+        margin: 0;
+        padding: 1rem;
+      }
+    }
+    .center-content {
+      padding: 1rem;
+    }
+  }
 }
