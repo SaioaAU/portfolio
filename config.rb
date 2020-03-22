@@ -47,3 +47,11 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+# Middleman-deploy configuration
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.remote = 'git@github.com:SaioaAU/saioaau.github.io.git'
+  # deploy.remote = 'git@github.com:SaioaAU/SaioaAU.github.io.git'
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
