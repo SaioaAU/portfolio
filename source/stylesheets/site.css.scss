@@ -226,6 +226,9 @@ h3 {
     .projects {
       flex-direction: column;
     }
+    .project {
+      height: 100vh;
+    }
     .project-contents {
       max-width: initial;
       flex-direction: column;
