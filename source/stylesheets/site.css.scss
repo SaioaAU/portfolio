@@ -217,3 +217,27 @@ h3 {
     }
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  .projects-container {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    .projects {
+      flex-direction: column;
+    }
+    .project-contents {
+      max-width: initial;
+      flex-direction: column;
+    }
+    h1 {
+      display: none;
+    }
+    img {
+      height: 60vh;
+    }
+    .center {
+      width: 100vw;
+    }
+  }
+}
